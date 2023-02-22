@@ -81,11 +81,11 @@
         <!-- from navbar title -->
         <div class="navbar-end">
           <div class="mr-10 lg:mr-20 hidden md:block">
-            <ul class="flex gap-6 font-semibold">
+            <ul id="page-ul" class="flex gap-6 font-semibold">
               <li><a href="#" class="text-[#D9461A]">Home</a></li>
-              <li><a href="#"  class=" hover:text-[#D9461A]">Products</a></li>
-              <li><a href="#" class=" hover:text-[#D9461A]">Contract</a></li>
-              <li><a href="#" class=" hover:text-[#D9461A]">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contract</a></li>
+              <li><a href="#" >About</a></li>
             </ul>
           </div>
           <button class="btn btn-ghost btn-circle">
@@ -155,7 +155,7 @@
       <section class="lg:flex max-w-[1350px] mx-auto lg:h-[650px]">
       <!-- Category side bar -->
       <aside >
-        <div class="drawer drawer-mobile absolute lg:relative lg:h-[100vh]">
+        <div class="drawer drawer-mobile absolute lg:relative lg:h-[645px]">
           <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
           <div class="drawer-content">
             <label for="my-drawer-2" class="drawer-button lg:hidden border-b p-1 sm:p-2 font-semibold flex justify-around items-center "><span class="font-semibold">Catagories  <img class="w-3 sm:w-4 lg:hidden inline mb-[2px] mr-2" src="icons/caret-down-solid.svg" alt="dropdown"></span>
@@ -164,26 +164,26 @@
           </div> 
           <div class="drawer-side border-r">
             <label for="my-drawer-2" class="drawer-overlay"></label> 
-            <ul class="menu p-1 lg:p-3 w-fit lg:w-56 bg-base-100 text-base-content">
+            <ul id="categories-ul" class="menu p-1 lg:p-3 w-fit lg:w-56 bg-base-100 text-base-content">
               <!-- Sidebar content here -->
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Fashion & Clothing</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Women's Fashion</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Men's Fashion</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Babies & Toys</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Winter Special</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Summer Special</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Clothing</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Bags</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Casual Shoes</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Rain Shoes</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Kids Corner</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Bootoms</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Sunglass</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Tops</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Women Cloths</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Watches</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Men's Care</a></li>
+              <li class=" hover:scale-[0.92] duration-300 origin-right"><a class="font-semibold hover:text-[#D9461A]">Women's Care</a></li>
             </ul>
           </div>
         </div>
@@ -438,10 +438,11 @@
           </div>
         </div>
       </section>
+      <!-- Discover features products -->
       <section class="my-5 md:my-8 px-2 md:px-0">
         <h1 class="text-xl md:text-3xl font-bold">Discover Features Products <span class=" font-semibold text-slate-400 text-xs md:text-xl md:ml-1">Every week we hand-pick some of the best items from our collection</span></h1> <hr class="mb-6 mt-2">
         <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-5">
-          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300">
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
             <figure><img class="rounded w-full" src="images/shoes3.jpeg" alt="Shoes" /></figure>
             <div class="card-body p-3 md:p-5">
               <h2 class="card-title text-base md:text-lg">
@@ -453,7 +454,8 @@
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
-                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.3)</span>
               </div>
               <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$160</del>  $107</p>
               <div class="flex items-center justify-between">
@@ -462,7 +464,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300">
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
             <figure><img class="rounded w-full max-h-[145px]" src="images/shoes4.jpeg" alt="Shoes" /></figure>
             <div class="card-body p-3 md:p-5">
               <h2 class="card-title text-base md:text-lg">
@@ -475,6 +477,7 @@
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
               </div>
               <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$200</del>  $145</p>
               <div class="flex items-center justify-between">
@@ -483,7 +486,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300">
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
             <figure><img class="rounded w-full max-h-[145px]" src="images/shoes5.jpeg" alt="Shoes" /></figure>
             <div class="card-body p-3 md:p-5">
               <h2 class="card-title text-base md:text-lg">
@@ -495,7 +498,8 @@
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
-                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.5)</span>
               </div>
               <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$270</del>  $218</p>
               <div class="flex items-center justify-between">
@@ -504,7 +508,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300">
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
             <figure><img class="rounded w-full max-h-[145px]" src="images/shoes6.jpg" alt="Shoes" /></figure>
             <div class="card-body p-3 md:p-5">
               <h2 class="card-title text-base md:text-lg">
@@ -516,7 +520,8 @@
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
-                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.8)</span>
               </div>
               <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$310</del>  $270</p>
               <div class="flex items-center justify-between">
@@ -525,7 +530,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300">
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
             <figure><img class="rounded w-full h-[145px]" src="images/shoes7.jpeg" alt="Shoes" /></figure>
             <div class="card-body p-3 md:p-5">
               <h2 class="card-title text-base md:text-lg">
@@ -538,6 +543,7 @@
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
                 <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
               </div>
               <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$120</del>  $99</p>
               <div class="flex items-center justify-between">
@@ -548,6 +554,325 @@
           </div>
         </div>
       </section>
+      <!-- The most recent releases -->
+      <section class="my-5 md:my-8 px-2 md:px-0">
+        <h1 class="text-xl md:text-3xl font-bold">Products <span class=" font-semibold text-slate-400 text-xs md:text-xl md:ml-1">The most recent releases</span></h1> <hr class="mb-6 mt-2">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-5">
+          <div class="card bg-base-100 shadow-xl  hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-fit max-h-[145px]" src="images/product-04.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Bags!
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$60</del>  $45</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full max-h-[145px] max-w-[150px]" src="images/product-02.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Tops!
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$90</del>  $72</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full max-h-[145px] max-w-[150px]" src="images/product-01.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Women Cloth!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$170</del>  $118</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full max-h-[145px] max-w-[145px]" src="images/product-03.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Rain Boots!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$310</del>  $268</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-red-400">Out of stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full h-[145px] max-w-[145px]" src="images/product-06.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Caps!
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$100</del>  $79</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full" src="images/shoes3.jpeg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Shoes N2a!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.7)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$160</del>  $107</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full max-h-[145px]" src="images/shoes4.jpeg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Shoes Casual!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$200</del>  $145</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full max-h-[145px]" src="images/shoes5.jpeg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Oxfords!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.9)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$270</del>  $218</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full max-h-[145px]" src="images/shoes6.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Rain Boots!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$310</del>  $270</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded w-full h-[145px]" src="images/shoes7.jpeg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Casual!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.8)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$120</del>  $99</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded max-w-[150px] max-h-[145px]" src="images/product-08.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Sunglass!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.7)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$40</del>  $24</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded max-w-[150px] max-h-[145px]" src="images/product-05.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Kid Tops!
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.3)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$120</del>  $102</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded max-w-[150px] max-h-[145px]" src="images/product-07.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Bootoms!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$220</del>  $199</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded">
+            <figure><img class="rounded max-w-[150px] max-h-[145px]" src="images/product-04.jpg" alt="Shoes" /></figure>
+            <div class="card-body p-3 md:p-5">
+              <h2 class="card-title text-base md:text-lg">
+                Shoes N2a!
+                <div class="badge badge-primary text-[10px]">NEW</div>
+              </h2>
+              <div class="flex gap-[1px] md:gap-[2px]">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-solid (1).svg" alt="">
+                <img class="w-3 md:w-4" src="icons/star-half-stroke-solid.svg" alt="">
+                <span class="text-yellow-500 text-xs md:text-sm sm:ml-1">(4.5)</span>
+              </div>
+              <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$60</del>  $45</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs md:text-sm font-semibold text-primary">In a stock</p>
+                <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl hover:scale-[1.03] transfrom-origin duration-300 rounded hidden md:flex">
+            <div class="w-full h-full flex justify-center items-center">
+              <img class="w-10" src="icons/plus-solid.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- JS file link -->
+    <script src="js/main.js"></script>
+    <script src="js/utilities.js"></script>
   </body>
 </html>
