@@ -20,7 +20,7 @@ const setDiscoverProduct = () => {
               </div>
               <p class="text-base md:text-xl font-semibold  text-[#D9461A]"><del class="font-medium text-base text-slate-500">$${product.oldPrice}</del>  $${product.newPrice}</p>
               <div class="flex items-center justify-between">
-                <p class="text-xs md:text-sm font-semibold text-primary">${product.stock}</p>
+                <p class="text-xs md:text-sm font-semibold ${product.stock === true ? 'text-primary' : 'text-[#D9461A]'}">${product.stock === true ? 'In a stock' : 'Out of stock'}</p>
                 <button class="px-2 py-1 bg-[#D9461A] font-semibold text-xs font-sans text-white rounded hover:scale-[1.2] transfrom-origin duration-300 hover:bg-primary">Add Cart</button>
               </div>
             </div>
